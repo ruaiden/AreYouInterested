@@ -3,7 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
+gem 'rest-client'
 gem 'dotenv-rails'
+
+gem 'json'
 gem 'open-uri'
 gem 'httparty'
 gem 'nokogiri'
