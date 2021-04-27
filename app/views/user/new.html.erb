@@ -1,2 +1,10 @@
-<h1>User#new</h1>
-<p>Find me in app/views/user/new.html.erb</p>
+<h1>Create Profile</h1>
+
+
+<%form_tag('user/show') do%>
+First Name: <%=text_field_tag "first_name"%><br>
+Last Name: <%=text_field_tag "last_name"%><br>
+Email: <%=text_field_tag "email"%>
+Password: <%=password_field_tag 'password'%><br>
+<%=submit_tag "Create User"%>
+<%end %>

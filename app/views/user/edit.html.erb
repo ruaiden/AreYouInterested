@@ -1,2 +1,10 @@
-<h1>User#edit</h1>
-<p>Find me in app/views/user/edit.html.erb</p>
+<h1>Edit User</h1>
+
+
+<%form_tag user_path do%>
+First Name: <%=text_field_tag :'user[first_name]' %><br>
+Last Name: <%=text_field_tag :'user[last_name]'%><br>
+Email: <%=text_field_tag :'user[email]'%><br>
+
+<%=submit_tag "Update User"%>
+<%end %>
